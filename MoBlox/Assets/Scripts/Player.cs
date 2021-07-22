@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -45,6 +46,13 @@ public class Player : MonoBehaviour
                 this.transform.position = point;
                 //GetComponent<Rigidbody>().velocity = point; //заменить на transform.position
             }
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (this.CompareTag("Player") && other.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //+ 1);
         }
     }
 

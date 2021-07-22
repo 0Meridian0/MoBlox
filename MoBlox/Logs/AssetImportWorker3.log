@@ -15,11 +15,11 @@ D:/Учеба/GG/MoBlox/MoBlox
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-54290
+54212
 Successfully changed project path to: D:/Учеба/GG/MoBlox/MoBlox
 D:/Учеба/GG/MoBlox/MoBlox
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 293.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 375.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path D:/NEED/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,18 @@ Initialize mono
 Mono path[0] = 'D:/NEED/Unity/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'D:/NEED/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/NEED/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/NEED/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/NEED/Unity/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007647 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 64.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 16.952 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.027676 seconds.

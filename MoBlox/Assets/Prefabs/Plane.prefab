@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7577255843070534274}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255843070534276}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 7577255843226303270}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255843226303272}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 7577255843467350853}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +218,7 @@ Transform:
   m_GameObject: {fileID: 7577255843467350855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.125, y: 0.5, z: -3.125}
-  m_LocalScale: {x: 3.75, y: 1, z: 1.25}
+  m_LocalScale: {x: 3.749, y: 1, z: 1.25}
   m_Children: []
   m_Father: {fileID: 7577255844376746727}
   m_RootOrder: 4
@@ -280,7 +280,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255843467350855}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 7577255843876215047}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +375,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255843876215049}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 7577255844677331921}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -511,7 +511,7 @@ Transform:
   m_GameObject: {fileID: 7577255844677331923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.5, y: 0.5, z: -3.125}
-  m_LocalScale: {x: 5, y: 1, z: 1.25}
+  m_LocalScale: {x: 4.99, y: 1, z: 1.25}
   m_Children: []
   m_Father: {fileID: 7577255844376746727}
   m_RootOrder: 3
@@ -573,7 +573,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255844677331923}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 7577255844701582930}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,7 +606,7 @@ Transform:
   m_GameObject: {fileID: 7577255844701582932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.5, y: 0.5, z: -4.375}
-  m_LocalScale: {x: 5, y: 1, z: 1.25}
+  m_LocalScale: {x: 4.99, y: 1, z: 1.25}
   m_Children: []
   m_Father: {fileID: 7577255844376746727}
   m_RootOrder: 5
@@ -668,7 +668,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255844701582932}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 7577255844765836687}
   m_Layer: 0
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -701,7 +701,7 @@ Transform:
   m_GameObject: {fileID: 7577255844765836689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.125, y: 0.5, z: -4.375}
-  m_LocalScale: {x: 3.75, y: 1, z: 1.25}
+  m_LocalScale: {x: 3.749, y: 1, z: 1.25}
   m_Children: []
   m_Father: {fileID: 7577255844376746727}
   m_RootOrder: 6
@@ -763,7 +763,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7577255844765836689}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
