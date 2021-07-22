@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     //добавить возможность менять ориентацию из префаба
     //выкинуть RigidBody
     [SerializeField] Camera rayCamera;
-    [SerializeField] bool horizontal;
+    [SerializeField] bool isHorizontal = false;
 
     private bool moveObject = false;
     public RaycastHit hit;
@@ -30,15 +30,15 @@ public class Player : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
             {
                 Vector3 point;
-                if (horizontal)
+                if (isHorizontal)
                 {
                     point = new Vector3(this.transform.position.x,
                                         this.transform.position.y,
-                                        hit.point.z);
+                                        Mathf.Round(hit.point.z));
                 }
                 else
                 {
-                    point = new Vector3(hit.point.x,
+                    point = new Vector3(Mathf.Round(hit.point.x),
                                         this.transform.position.y,
                                         this.transform.position.z);
                 }

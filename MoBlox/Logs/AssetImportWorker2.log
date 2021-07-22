@@ -15,11 +15,11 @@ D:/Учеба/GG/MoBlox/MoBlox
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-52569
+54290
 Successfully changed project path to: D:/Учеба/GG/MoBlox/MoBlox
 D:/Учеба/GG/MoBlox/MoBlox
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 485.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 565.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path D:/NEED/Unity/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,5 @@ Initialize mono
 Mono path[0] = 'D:/NEED/Unity/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'D:/NEED/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/NEED/Unity/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56340
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
 Begin MonoManager ReloadAssembly
