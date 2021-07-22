@@ -371,7 +371,12 @@ PrefabInstance:
       propertyPath: rayCamera
       value: 
       objectReference: {fileID: 963194227}
-    m_RemovedComponents: []
+    - target: {fileID: 7128247975546331235, guid: 53cabb6df8bed244fa49953288f6126f, type: 3}
+      propertyPath: horizontal
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1488618465651532431, guid: 53cabb6df8bed244fa49953288f6126f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 53cabb6df8bed244fa49953288f6126f, type: 3}
 --- !u!1001 &7577255843765153918
 PrefabInstance:

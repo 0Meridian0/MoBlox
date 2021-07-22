@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Camera rayCamera;
+
+
+    //добавить возможность менять ориентацию из префаба
+    //выкинуть RigidBody
+    [SerializeField] Camera rayCamera;
+    [SerializeField] bool horizontal;
+
     private bool moveObject = false;
     public RaycastHit hit;
     public Ray ray;
@@ -16,17 +22,28 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void FixedUpdate() //Фиксить ибо не работает!
     {
         if (moveObject)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 100))
             {
-                Vector3 point = new Vector3(hit.point.x,
+                Vector3 point;
+                if (horizontal)
+                {
+                    point = new Vector3(this.transform.position.x,
                                         this.transform.position.y,
                                         hit.point.z);
-                GetComponent<Rigidbody>().velocity = point;
+                }
+                else
+                {
+                    point = new Vector3(hit.point.x,
+                                        this.transform.position.y,
+                                        this.transform.position.z);
+                }
+                this.transform.position = point;
+                //GetComponent<Rigidbody>().velocity = point; //заменить на transform.position
             }
         }
     }
