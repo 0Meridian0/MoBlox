@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayCamera: {fileID: 0}
-  horizontal: 0
+  isHorizontal: 0

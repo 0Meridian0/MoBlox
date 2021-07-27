@@ -5,15 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
-
-    //добавить возможность менять ориентацию из префаба
-    //выкинуть RigidBody
     [SerializeField] Camera rayCamera;
     [SerializeField] bool isHorizontal = false;
+    [SerializeField] int sizeBox;
 
     private bool moveObject = false;
-    public RaycastHit hit;
     public Ray ray;
 
     // Use this for initialization
@@ -23,12 +19,12 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate() //Фиксить ибо не работает!
+    void Update()
     {
         if (moveObject)
         {
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Physics.Raycast(ray, out RaycastHit hit, 100))
             {
                 Vector3 point;
                 if (isHorizontal)
@@ -43,8 +39,16 @@ public class Player : MonoBehaviour
                                         this.transform.position.y,
                                         this.transform.position.z);
                 }
-                this.transform.position = point;
-                //GetComponent<Rigidbody>().velocity = point; //заменить на transform.position
+
+                if (Physics.Raycast(transform.position, (point - transform.position).normalized, out RaycastHit hit2, (sizeBox + 1) / 2) &&
+                   (hit2.transform.CompareTag("Border") || hit2.transform.CompareTag("Player") || hit2.transform.CompareTag("Game block")))
+                {
+                    Debug.DrawRay(transform.position, (point - transform.position).normalized, Color.green, (sizeBox + 1) / 2);
+                }
+                else
+                {
+                    this.transform.position = point;
+                }
             }
         }
     }
