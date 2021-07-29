@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
                                         this.transform.position.z);
                 }
 
-                if (Physics.Raycast(transform.position, (point - transform.position).normalized, out RaycastHit hit2, (sizeBox + 1) / 2) &&
+                if (Physics.Raycast(transform.position, (point - transform.position).normalized, out RaycastHit hit2, (sizeBox + 1) / 2f) &&
                    (hit2.transform.CompareTag("Border") || hit2.transform.CompareTag("Player") || hit2.transform.CompareTag("Game block")))
                 {
                     Debug.DrawRay(transform.position, (point - transform.position).normalized, Color.green, (sizeBox + 1) / 2);

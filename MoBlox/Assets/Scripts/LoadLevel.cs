@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
@@ -12,8 +13,6 @@ public class LoadLevel : MonoBehaviour
     {
         int loadingLvl = MakeString();
         Instantiate(massPrefabs[loadingLvl], Vector3.zero, Quaternion.identity);
-
-        //curTetramino = Instantiate(massTetraminoes[Random.Range(0, massTetraminoes.Length)], transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -23,10 +22,9 @@ public class LoadLevel : MonoBehaviour
     }
     int MakeString()
     {
-        //обращаемся к сохраненному уровню и получаем 
-        int savedLvl = 1;
-        string strLvl = "lvl_" + savedLvl;
-        return 0;
+        string _savedLvl = LevelManager.Instance.ChosenLevel();
+        int lvl = int.Parse(_savedLvl) - 1;
+        return lvl;
     }
 
     public void RestartLvl()
