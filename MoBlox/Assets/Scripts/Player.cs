@@ -29,26 +29,25 @@ public class Player : MonoBehaviour
                 Vector3 point;
                 if (isHorizontal)
                 {
-                    point = new Vector3(this.transform.position.x,
-                                        this.transform.position.y,
-                                        Mathf.Round(hit.point.z));
+                    point = new Vector3(transform.position.x,
+                        transform.position.y,
+                        Mathf.Round(hit.point.z));
                 }
                 else
                 {
                     point = new Vector3(Mathf.Round(hit.point.x),
-                                        this.transform.position.y,
-                                        this.transform.position.z);
+                        transform.position.y,
+                        transform.position.z);
                 }
 
-                if (Physics.Raycast(transform.position, (point - transform.position).normalized, out RaycastHit hit2, (sizeBox + 1) / 2f) &&
-                   (hit2.transform.CompareTag("Border") || hit2.transform.CompareTag("Player") || hit2.transform.CompareTag("Game block")))
+                if (Physics.Raycast(transform.position, (point - transform.position).normalized, out RaycastHit hit2,
+                        (sizeBox + 1) / 2f) &&
+                    (hit2.transform.CompareTag("Border") || hit2.transform.CompareTag("Player") ||
+                     hit2.transform.CompareTag("Game block")))
                 {
-                    Debug.DrawRay(transform.position, (point - transform.position).normalized, Color.green, (sizeBox + 1) / 2);
+                    return;
                 }
-                else
-                {
-                    this.transform.position = point;
-                }
+                transform.position = point;
             }
         }
     }
@@ -56,6 +55,7 @@ public class Player : MonoBehaviour
     {
         if (this.CompareTag("Player") && other.CompareTag("Finish"))
         {
+            LevelManager.Instance.ChosenLevel++;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //+ 1);
         }
     }

@@ -8,23 +8,15 @@ public class LoadLevel : MonoBehaviour
 {
     [SerializeField]
     GameObject[] massPrefabs;
+
+    [SerializeField]
+    Text levelText;
     // Start is called before the first frame update
     void Start()
     {
-        int loadingLvl = MakeString();
-        Instantiate(massPrefabs[loadingLvl], Vector3.zero, Quaternion.identity);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    int MakeString()
-    {
-        string _savedLvl = LevelManager.Instance.ChosenLevel();
-        int lvl = int.Parse(_savedLvl) - 1;
-        return lvl;
+        int loadingLvl = LevelManager.Instance.ChosenLevel;
+        Instantiate(massPrefabs[loadingLvl - 1], Vector3.zero, Quaternion.identity);
+        levelText.text = "Level " + loadingLvl;
     }
 
     public void RestartLvl()

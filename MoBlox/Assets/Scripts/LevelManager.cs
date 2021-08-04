@@ -6,28 +6,24 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    //public static LevelManager savedLevel { get; private set; }
-    private static LevelManager _instance;
 
-    public static LevelManager Instance { get { return _instance; } }
+    public static LevelManager Instance { get; private set; }
 
 
     void Awake()
     {
-        if (_instance != null && _instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
         }
         else
         {
-            _instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.LoadScene("MenuScene");
         }
     }
 
-    public string ChosenLevel()
-    {
-        return;
-    }
+    public int ChosenLevel { get; set; }
 
 }

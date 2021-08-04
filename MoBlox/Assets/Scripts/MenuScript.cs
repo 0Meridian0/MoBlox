@@ -7,8 +7,9 @@ public class MenuScript : MonoBehaviour
 {
     // static int levelNumber;
     // public void LoadScene(int level)
-    public void LoadScene()
+    public void LoadScene(int level)
     {
+        LevelManager.Instance.ChosenLevel = level;
         // levelNumber = level;
         SceneManager.LoadScene("MainScene");
     }

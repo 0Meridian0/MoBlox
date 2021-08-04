@@ -986,8 +986,9 @@ MonoBehaviour:
   massPrefabs:
   - {fileID: 6615325418405129938, guid: 4acb0c2f0fb2c41419e88e21bc713e0c, type: 3}
   - {fileID: 5774927872009792581, guid: 318fc70c20b53024e9e288376bdba296, type: 3}
-  - {fileID: 1730607231824126657, guid: 04fdcee6e2f10fd4bb3749263934c85c, type: 3}
-  - {fileID: 8105811970557904246, guid: 450bc1d14bd02e046995120d6e227a3e, type: 3}
+  - {fileID: 5313591682547726424, guid: 04fdcee6e2f10fd4bb3749263934c85c, type: 3}
+  - {fileID: 4004408153080870156, guid: 450bc1d14bd02e046995120d6e227a3e, type: 3}
+  levelText: {fileID: 60053223}
 --- !u!1 &1227645252
 GameObject:
   m_ObjectHideFlags: 0
