@@ -6,15 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
 {
-    [SerializeField]
-    GameObject[] massPrefabs;
+    [SerializeField] GameObject[] massPrefabs;
 
-    [SerializeField]
-    Text levelText;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Text levelText;
+    private void Start()
     {
-        int loadingLvl = LevelManager.Instance.ChosenLevel;
+        var loadingLvl = LevelManager.Instance.ChosenLevel;
         Instantiate(massPrefabs[loadingLvl - 1], Vector3.zero, Quaternion.identity);
         levelText.text = "Level " + loadingLvl;
     }
